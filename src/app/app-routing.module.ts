@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
-  { path: 'employee', component: EmployeeComponent, canActivate: [LoginGuard] },
+  { path: 'employee', component: EmployeeComponent, },
   { path: 'login', component: LoginComponent },
   {
     path: 'rooms',
