@@ -4,7 +4,7 @@ import { Directive, ElementRef, HostListener, Inject, Input, OnInit, Renderer2 }
   selector: '[hinvHover]',
 })
 export class HoverDirective implements OnInit {
-  @Input() hinvHover: string = 'red';
+  @Input() hinvHover: string = 'white';
 
   constructor(private element: ElementRef, private renderer: Renderer2) {
     console.log(this.element.nativeElement);
@@ -22,7 +22,7 @@ export class HoverDirective implements OnInit {
     this.renderer.setStyle(
       this.element.nativeElement,
       'backgroundColor',
-      'green'
+      'white'
     );
   }
 

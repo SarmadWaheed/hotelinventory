@@ -11,11 +11,11 @@ import { ShareddataService } from '../services/shareddata.service';
 export class EmployeeComponent implements OnInit {
   empName: string = 'John';
 
-  constructor(private sharedDataSerice: ShareddataService) {}
+  constructor(private sharedDataService: ShareddataService) {}
 
   ngOnInit(): void {}
 
   sendMessage(){
-    this.sharedDataSerice.setMessage('Hello from Employee');
+    this.sharedDataService.setMessage('Hello from Employee');
   }
 }
