@@ -12,8 +12,7 @@ const routes: Routes = [
     path: 'rooms',
     loadChildren: () =>
       import('./rooms/rooms.module').then((m) => m.RoomsModule),
-    canActivate: [LoginGuard],
-    canLoad: [LoginGuard], 
+    
   },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   {

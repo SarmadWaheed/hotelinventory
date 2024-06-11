@@ -5,7 +5,7 @@ import { CommentGuard } from './guard/comment.guard';
 
 const routes: Routes = [
   {
-    path: 'comment',
+    path: '',
     component: CommentComponent,
   
   },

@@ -21,9 +21,17 @@ export class RequestInterceptor implements HttpInterceptor {
     if (request.method === 'POST') {
       const newRequest = request.clone({
         headers: new HttpHeaders({ token: '12345564654sdgfg' }),
+
+       
       });
       return next.handle(newRequest);
+      
     }
+    console.log(request);
+
     return next.handle(request);
+    
+
+    
   }
 }
