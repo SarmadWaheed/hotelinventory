@@ -7,6 +7,7 @@ export class LoginService {
   isLoggedIn: boolean = false;
 
   isAdmin: boolean = false;
+  isuser: boolean  =false;
 
   constructor() {}
 
@@ -18,6 +19,7 @@ export class LoginService {
     if (email === 'user@gmail.com' && password === 'user') {
        this.isLoggedIn = true;
        this.isAdmin = false;
+       this.isuser=true;
     }
       return this.isLoggedIn;
   }

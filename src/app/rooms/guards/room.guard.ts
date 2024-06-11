@@ -13,7 +13,7 @@ export class RoomGuard implements CanActivateChild {
   canActivateChild(
     childRoute: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return this.loginService.isAdmin;
+    return this.loginService.isuser;
   }
   
 }
